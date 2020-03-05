@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jpasty <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/03/05 17:26:06 by jpasty            #+#    #+#              #
+#    Updated: 2020/03/05 17:26:17 by jpasty           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME := libftprintf.a
 LIBFT := libft.a
 HEADERS := ft_printf.h
@@ -69,5 +81,5 @@ clean_libft:
 fclean_libft: clean_libft
 	make fclean -C $(DIR_LIBFT)
 
-# .PHONY: clean fclean re clean_libft fclean_libft
-# .SILENT: all $(OBJS) $(DIR_BIN) clean fclean re echo clean_libft fclean_libft
+.PHONY: clean fclean re clean_libft fclean_libft
+.SILENT: all $(OBJS) $(DIR_BIN) clean fclean re echo clean_libft fclean_libft
