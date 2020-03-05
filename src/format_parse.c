@@ -79,7 +79,7 @@ void	size_parser(const char *f, t_format *param)
 	}
 	if (big_l)
 		param->size = 5;
-	else if (big_l == 2  || (l && l % 2 == 0))
+	else if (big_l == 2 || (l && l % 2 == 0))
 		param->size = 4;
 	else if (l > 0)
 		param->size = 3;

@@ -12,17 +12,12 @@
 
 #include "ft_printf.h"
 
-char		*clean_mult(t_mult *mult, char *s1)
+void		clean_mult(t_mult *mult)
 {
-	char	*res;
-
-	free(s1);
 	free(mult->zero);
 	free(mult->s1);
 	free(mult->s2);
-	res = mult->out;
 	free(mult);
-	return (res);
 }
 
 void		clean_sum(t_sum *sum)

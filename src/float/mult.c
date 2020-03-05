@@ -103,6 +103,6 @@ char			*ft_mult(char *s1, char *s2)
 		mult->i++;
 		s--;
 	}
-	s1 = clean_mult(mult, s1);
-	return (s1);
+	clean_mult(mult);
+	return (mult->out);
 }

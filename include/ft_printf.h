@@ -147,7 +147,7 @@ char				*exceptions(unsigned long m, int sign);
 size_t				ft_max(char *s1, char *s2);
 size_t				ft_min(char *s1, char *s2);
 int					ft_abs(int nb);
-char				*clean_mult(t_mult *mult, char *s1);
+void				clean_mult(t_mult *mult);
 void				clean_sum(t_sum *sum);
 char				*ft_strsubf(char *s, unsigned int start, size_t len);
 char				*check_format(t_format *param);

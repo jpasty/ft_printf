@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int			ft_printf(const char *format, ...)
+int				ft_printf(const char *format, ...)
 {
 	va_list	ap;
 	size_t	i;
@@ -27,7 +27,7 @@ int			ft_printf(const char *format, ...)
 	return (i);
 }
 
-size_t		format_manager(const char *format, va_list ap)
+size_t			format_manager(const char *format, va_list ap)
 {
 	size_t		length;
 	t_format	*param;
